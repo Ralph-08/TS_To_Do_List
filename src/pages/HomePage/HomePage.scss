@@ -1,0 +1,52 @@
+@use "../../styles/partials/mixins" as *;
+
+.hero {
+  height: 675px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+
+  &__bg {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    height: 675px;
+  }
+
+  &__container {
+    padding-left: 2rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      padding-left: 6rem;
+    }
+  }
+
+  &__header {
+    color: white;
+    font-size: 3rem;
+    width: 70%;
+    font-weight: 500;
+    @include tablet {
+      max-width: 60%;
+      font-size: 4rem;
+    }
+  }
+
+  &__p {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    padding-bottom: 2rem;
+    @include tablet {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__btn {
+    width: 8rem;
+    color: white;
+  }
+}
