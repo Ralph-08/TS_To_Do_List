@@ -3,6 +3,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "./NavBar.scss";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -15,7 +16,7 @@ export default function NavBar() {
         data-bs-theme="light"
       >
         <Container>
-          <Navbar.Brand href="#home">Fuente De Misericordia</Navbar.Brand>
+          <Navbar.Brand href="#home"><Link to="/" className="nav__link">FM</Link></Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -26,7 +27,7 @@ export default function NavBar() {
                 <NavDropdown.Item href="#action/3.2">Dorcas</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Parejas</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Jovenes</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Ninos</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Niños</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Alabanza</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">

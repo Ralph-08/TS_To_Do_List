@@ -1,0 +1,19 @@
+@use "../../styles/partials/mixins" as *;
+
+@keyframes fade-in {
+  from {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.card {
+  animation: fade-in 1s;
+  @include tablet {
+    width: 35rem;
+  }
+}
