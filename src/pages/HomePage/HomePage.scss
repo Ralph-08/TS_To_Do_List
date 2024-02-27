@@ -102,6 +102,12 @@
       gap: 3rem;
       justify-content: center;
       padding: 1rem;
+
+      .card {
+        &__link {
+          text-decoration: none;
+        }
+      }
     }
   }
 }
