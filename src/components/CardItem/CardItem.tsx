@@ -1,8 +1,7 @@
 import Card from "react-bootstrap/Card";
-import CardGroup from "react-bootstrap/CardGroup";
-import "./CardItem.scss"
-
-import cardImg from "../../assets/images/varones.jpeg";
+import "./CardItem.scss";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function CardItem({
   image,

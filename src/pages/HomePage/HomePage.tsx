@@ -10,6 +10,7 @@ import parejasImg from "../../assets/images/parejas.jpeg";
 import jovenesImg from "../../assets/images/jovenes.jpeg";
 import ninosImg from "../../assets/images/ninos.jpeg";
 import alabanzaImg from "../../assets/images/alabanza.jpeg";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
@@ -54,58 +55,70 @@ export default function HomePage() {
           <h1 className="min__header">Ministerios: </h1>
           <ul className="cards">
             <li className="card">
-              {
-                <CardItem
-                  image={varonesImg}
-                  title="VARONES"
-                  description="Bienvenido al grupo de varones"
-                />
-              }
+              <Link to="grupo/varones" className="card__link">
+                {
+                  <CardItem
+                    image={varonesImg}
+                    title="VARONES"
+                    description="Bienvenido al grupo de varones"
+                  />
+                }
+              </Link>
             </li>
             <li className="card">
-              {
-                <CardItem
-                  image={dorcasImg}
-                  title="DORCAS"
-                  description="Bienvenido al grupo de Dorcas"
-                />
-              }
+              <Link to="grupo/dorcas" className="card__link">
+                {
+                  <CardItem
+                    image={dorcasImg}
+                    title="DORCAS"
+                    description="Bienvenido al grupo de Dorcas"
+                  />
+                }
+              </Link>
             </li>
             <li className="card">
-              {
-                <CardItem
-                  image={parejasImg}
-                  title="PAREJAS"
-                  description="Bienvenido al grupo de parejas"
-                />
-              }
+              <Link to="grupo/parejas" className="card__link">
+                {
+                  <CardItem
+                    image={parejasImg}
+                    title="PAREJAS"
+                    description="Bienvenido al grupo de parejas"
+                  />
+                }
+              </Link>
             </li>
             <li className="card">
-              {
-                <CardItem
-                  image={jovenesImg}
-                  title="JOVENES"
-                  description="Bienvenido al grupo de jovenes"
-                />
-              }
+              <Link to="grupo/jovenes" className="card__link">
+                {
+                  <CardItem
+                    image={jovenesImg}
+                    title="JOVENES"
+                    description="Bienvenido al grupo de jovenes"
+                  />
+                }
+              </Link>
             </li>
             <li className="card">
-              {
-                <CardItem
-                  image={ninosImg}
-                  title="NIÑOS"
-                  description="Bienvenido al grupo de niños"
-                />
-              }
+              <Link to="grupo/kids" className="card__link">
+                {
+                  <CardItem
+                    image={ninosImg}
+                    title="KIDS"
+                    description="Bienvenido al grupo de niños"
+                  />
+                }
+              </Link>
             </li>
             <li className="card">
-              {
-                <CardItem
-                  image={alabanzaImg}
-                  title="ALABANZA"
-                  description="Bienvenido al grupo de alabanza"
-                />
-              }
+              <Link to="grupo/alabanza" className="card__link">
+                {
+                  <CardItem
+                    image={alabanzaImg}
+                    title="ALABANZA"
+                    description="Bienvenido al grupo de alabanza"
+                  />
+                }
+              </Link>
             </li>
           </ul>
         </section>

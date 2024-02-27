@@ -4,12 +4,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import GroupPage from "./pages/GroupPage/GroupPage";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/grupos/:groupName" element={<GroupPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </BrowserRouter>
