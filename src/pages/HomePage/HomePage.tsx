@@ -55,7 +55,7 @@ export default function HomePage() {
           <h1 className="min__header">Ministerios: </h1>
           <ul className="cards">
             <li className="card">
-              <Link to="grupo/varones" className="card__link">
+              <Link to="grupos/varones" className="card__link">
                 {
                   <CardItem
                     image={varonesImg}
@@ -66,7 +66,7 @@ export default function HomePage() {
               </Link>
             </li>
             <li className="card">
-              <Link to="grupo/dorcas" className="card__link">
+              <Link to="grupos/dorcas" className="card__link">
                 {
                   <CardItem
                     image={dorcasImg}
@@ -77,7 +77,7 @@ export default function HomePage() {
               </Link>
             </li>
             <li className="card">
-              <Link to="grupo/parejas" className="card__link">
+              <Link to="grupos/parejas" className="card__link">
                 {
                   <CardItem
                     image={parejasImg}
@@ -88,7 +88,7 @@ export default function HomePage() {
               </Link>
             </li>
             <li className="card">
-              <Link to="grupo/jovenes" className="card__link">
+              <Link to="grupos/jovenes" className="card__link">
                 {
                   <CardItem
                     image={jovenesImg}
@@ -99,7 +99,7 @@ export default function HomePage() {
               </Link>
             </li>
             <li className="card">
-              <Link to="grupo/kids" className="card__link">
+              <Link to="grupos/kids" className="card__link">
                 {
                   <CardItem
                     image={ninosImg}
@@ -110,7 +110,7 @@ export default function HomePage() {
               </Link>
             </li>
             <li className="card">
-              <Link to="grupo/alabanza" className="card__link">
+              <Link to="grupos/alabanza" className="card__link">
                 {
                   <CardItem
                     image={alabanzaImg}
