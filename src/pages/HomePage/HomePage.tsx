@@ -55,7 +55,7 @@ export default function HomePage() {
           <h1 className="min__header">Ministerios: </h1>
           <ul className="cards">
             <li className="card">
-              <Link to="grupos/varones" className="card__link">
+              <Link to="/varones" className="card__link">
                 {
                   <CardItem
                     image={varonesImg}

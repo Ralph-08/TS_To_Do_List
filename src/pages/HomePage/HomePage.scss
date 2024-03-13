@@ -40,13 +40,11 @@
 
     &__header {
       color: white;
-      font-size: 3rem;
       width: 70%;
       font-weight: 500;
       animation: fade-in-one 1s;
       @include tablet {
         max-width: 60%;
-        font-size: 4rem;
       }
     }
 
