@@ -1,6 +1,9 @@
 import NavBar from "../../components/NavBar/NavBar";
 import "./HomePage.scss";
 import videoBg from "../../assets/videos/videoBg.mp4";
+
+import fdmVid from "../../assets/videos/fdm2.mp4";
+
 import "./HomePage.scss";
 import Button from "react-bootstrap/Button";
 import CardItem from "../../components/CardItem/CardItem";
@@ -8,8 +11,9 @@ import varonesImg from "../../assets/images/varones.jpeg";
 import dorcasImg from "../../assets/images/dorcas.webp";
 import parejasImg from "../../assets/images/parejas.jpeg";
 import jovenesImg from "../../assets/images/jovenes.jpeg";
-import ninosImg from "../../assets/images/ninos.jpeg";
-import alabanzaImg from "../../assets/images/alabanza.jpeg";
+import kidsImg from "../../assets/images/parvulos.jpg";
+import juniorsImg from "../../assets/images/juniors.jpg";
+import alabanzaImg from "../../assets/images/drums.jpg";
 import { Link } from "react-router-dom";
 
 export default function HomePage() {
@@ -18,7 +22,7 @@ export default function HomePage() {
       <header className="header">
         <NavBar />
         <section className="hero">
-          <video className="hero__bg" src={videoBg} autoPlay loop muted />
+          <video className="hero__bg" src={fdmVid} autoPlay loop muted />
           <section className="hero__container">
             <h1 className="hero__header">
               BIENVENIDO A FUENTE DE MISERICORDIA!
@@ -44,7 +48,7 @@ export default function HomePage() {
             <b>
               <em>Domingo:</em>
             </b>{" "}
-            12:00PM
+            11:00AM
           </p>
           <p className="info__address">
             10 Kitties Landing Rd Bluffton, SC 29910
@@ -102,9 +106,20 @@ export default function HomePage() {
               <Link to="grupos/kids" className="card__link">
                 {
                   <CardItem
-                    image={ninosImg}
-                    title="KIDS"
-                    description="Bienvenido al grupo de niños"
+                    image={juniorsImg}
+                    title="JUNIORS"
+                    description="Bienvenido al grupo de juniors"
+                  />
+                }
+              </Link>
+            </li>
+            <li className="card">
+              <Link to="grupos/kids" className="card__link">
+                {
+                  <CardItem
+                    image={kidsImg}
+                    title="PÁRVULOS"
+                    description="Bienvenido al grupo de párvulos"
                   />
                 }
               </Link>

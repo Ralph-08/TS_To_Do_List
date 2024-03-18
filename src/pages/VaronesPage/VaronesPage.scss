@@ -23,6 +23,9 @@
     display: flex;
     padding: 0 2rem;
     height: 35rem;
+    @include tablet {
+      padding: 0 6rem;
+    }
 
     &__header {
       animation: drop-in 0.8s;
@@ -33,15 +36,67 @@
 }
 
 .varones-body {
+  padding: 4rem 2rem;
+  @include tablet {
+    padding: 6rem 3rem;
+  }
+  @include desktop {
+    margin: 0 auto;
+    max-width: $desktop-breakpoint;
+    padding: 6rem 2rem;
+  }
+
   .mission {
-    padding: 4rem 2rem;
+    margin-bottom: 3rem;
     @include tablet {
-      padding: 6rem 3rem;
+      margin-bottom: 4rem;
     }
-    @include desktop {
-      margin: 0 auto;
-      max-width: $desktop-breakpoint;
-      padding: 6rem 2rem;
+
+    &__subheader {
+      margin-bottom: 2rem;
+    }
+
+    &__p {
+      max-width: $tablet-breakpoint;
+    }
+  }
+
+  .varones-events {
+    .events__subheader {
+      margin-bottom: 2rem;
+    }
+    .events {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      @include tablet {
+        gap: 3rem;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  .leader {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 400px;
+      padding: 2rem 0 3rem;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+      align-self: center;
+    }
+
+    &__img {
+      border-radius: 100%;
     }
   }
 }
