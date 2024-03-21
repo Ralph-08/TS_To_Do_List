@@ -1,0 +1,9 @@
+@use "../partials/mixins.scss" as *;
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  @include tablet {
+    font-size: 4rem;
+  }
+}

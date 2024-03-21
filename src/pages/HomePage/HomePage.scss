@@ -23,6 +23,7 @@
       width: 100%;
       object-fit: cover;
       position: absolute;
+      padding-top: 1.2rem;
       z-index: -1;
       height: 675px;
     }
@@ -40,13 +41,11 @@
 
     &__header {
       color: white;
-      font-size: 3rem;
       width: 70%;
       font-weight: 500;
       animation: fade-in-one 1s;
       @include tablet {
         max-width: 60%;
-        font-size: 4rem;
       }
     }
 
@@ -88,6 +87,14 @@
 
   .min {
     background-color: rgb(235, 248, 254);
+
+    &__container {
+      max-width: 1280px;
+      margin: 0 auto;
+      @include desktop {
+        // padding: 0 2rem;
+      }
+    }
 
     &__header {
       padding: 3rem 1rem 1rem;
