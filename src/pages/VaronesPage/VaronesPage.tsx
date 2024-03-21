@@ -1,14 +1,9 @@
-import { useState } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import "./VaronesPage.scss";
 import EventCard from "../../components/EventCard/EventCard";
 import defaultProfilePic from "../../assets/images/default-profile.png";
 
 export default function VaronesPage() {
-  //   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  //   const handleResize = () => setWindowWidth(window.innerWidth);
-  //   window.addEventListener("resize", handleResize);
-
   return (
     <>
       <header className="varones-header">
@@ -30,10 +25,38 @@ export default function VaronesPage() {
         <section className="varones-events">
           <h2 className="events__subheader">EVENTOS Y ACTIVIDADES</h2>
           <section className="events">
-            <EventCard />
-            <EventCard />
-            <EventCard />
-            <EventCard />
+            <EventCard
+              month="ABRIL"
+              day="9"
+              title="Junta de Varones"
+              desc="Vamos a tener una junta de varones para planear las actividades de ese año."
+              time="8:00PM"
+              location="En la iglesia"
+            />{" "}
+            <EventCard
+              month="ABRIL"
+              day="22"
+              title="Junta de Varones"
+              desc="Vamos a tener una junta de varones para planear las actividades de ese año."
+              time="7:00PM"
+              location="En la iglesia"
+            />{" "}
+            <EventCard
+              month="MAYO"
+              day="14"
+              title="Junta de Varones"
+              desc="Vamos a tener una junta de varones para planear las actividades de ese año."
+              time="7:00PM"
+              location="En la iglesia"
+            />{" "}
+            <EventCard
+              month="JUNIO"
+              day="2"
+              title="Junta de Varones"
+              desc="Vamos a tener una junta de varones para planear las actividades de ese año."
+              time="11:00AM"
+              location="En la iglesia"
+            />
           </section>
         </section>
 
