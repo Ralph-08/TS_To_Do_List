@@ -56,86 +56,88 @@ export default function HomePage() {
         </section>
 
         <section className="min">
-          <h1 className="min__header">Ministerios: </h1>
-          <ul className="cards">
-            <li className="card">
-              <Link to="/varones" className="card__link">
-                {
-                  <CardItem
-                    image={varonesImg}
-                    title="VARONES"
-                    description="Bienvenido al grupo de varones"
-                  />
-                }
-              </Link>
-            </li>
-            <li className="card">
-              <Link to="grupos/dorcas" className="card__link">
-                {
-                  <CardItem
-                    image={dorcasImg}
-                    title="DORCAS"
-                    description="Bienvenido al grupo de Dorcas"
-                  />
-                }
-              </Link>
-            </li>
-            <li className="card">
-              <Link to="grupos/parejas" className="card__link">
-                {
-                  <CardItem
-                    image={parejasImg}
-                    title="PAREJAS"
-                    description="Bienvenido al grupo de parejas"
-                  />
-                }
-              </Link>
-            </li>
-            <li className="card">
-              <Link to="grupos/jovenes" className="card__link">
-                {
-                  <CardItem
-                    image={jovenesImg}
-                    title="JOVENES"
-                    description="Bienvenido al grupo de jovenes"
-                  />
-                }
-              </Link>
-            </li>
-            <li className="card">
-              <Link to="grupos/kids" className="card__link">
-                {
-                  <CardItem
-                    image={juniorsImg}
-                    title="JUNIORS"
-                    description="Bienvenido al grupo de juniors"
-                  />
-                }
-              </Link>
-            </li>
-            <li className="card">
-              <Link to="grupos/kids" className="card__link">
-                {
-                  <CardItem
-                    image={kidsImg}
-                    title="PÁRVULOS"
-                    description="Bienvenido al grupo de párvulos"
-                  />
-                }
-              </Link>
-            </li>
-            <li className="card">
-              <Link to="grupos/alabanza" className="card__link">
-                {
-                  <CardItem
-                    image={alabanzaImg}
-                    title="ALABANZA"
-                    description="Bienvenido al grupo de alabanza"
-                  />
-                }
-              </Link>
-            </li>
-          </ul>
+          <section className="min__container">
+            <h2 className="min__header">Ministerios: </h2>
+            <ul className="cards">
+              <li className="card">
+                <Link to="/varones" className="card__link">
+                  {
+                    <CardItem
+                      image={varonesImg}
+                      title="VARONES"
+                      description="Bienvenido al grupo de varones"
+                    />
+                  }
+                </Link>
+              </li>
+              <li className="card">
+                <Link to="grupos/dorcas" className="card__link">
+                  {
+                    <CardItem
+                      image={dorcasImg}
+                      title="DORCAS"
+                      description="Bienvenido al grupo de Dorcas"
+                    />
+                  }
+                </Link>
+              </li>
+              <li className="card">
+                <Link to="grupos/parejas" className="card__link">
+                  {
+                    <CardItem
+                      image={parejasImg}
+                      title="PAREJAS"
+                      description="Bienvenido al grupo de parejas"
+                    />
+                  }
+                </Link>
+              </li>
+              <li className="card">
+                <Link to="grupos/jovenes" className="card__link">
+                  {
+                    <CardItem
+                      image={jovenesImg}
+                      title="JOVENES"
+                      description="Bienvenido al grupo de jovenes"
+                    />
+                  }
+                </Link>
+              </li>
+              <li className="card">
+                <Link to="grupos/kids" className="card__link">
+                  {
+                    <CardItem
+                      image={juniorsImg}
+                      title="JUNIORS"
+                      description="Bienvenido al grupo de juniors"
+                    />
+                  }
+                </Link>
+              </li>
+              <li className="card">
+                <Link to="grupos/kids" className="card__link">
+                  {
+                    <CardItem
+                      image={kidsImg}
+                      title="CORDERITOS"
+                      description="Bienvenido al grupo de corderitos"
+                    />
+                  }
+                </Link>
+              </li>
+              <li className="card">
+                <Link to="grupos/alabanza" className="card__link">
+                  {
+                    <CardItem
+                      image={alabanzaImg}
+                      title="ALABANZA"
+                      description="Bienvenido al grupo de alabanza"
+                    />
+                  }
+                </Link>
+              </li>
+            </ul>
+          </section>
         </section>
       </main>
     </>

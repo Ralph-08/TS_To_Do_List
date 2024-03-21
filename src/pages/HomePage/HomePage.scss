@@ -88,6 +88,14 @@
   .min {
     background-color: rgb(235, 248, 254);
 
+    &__container {
+      max-width: 1280px;
+      margin: 0 auto;
+      @include desktop {
+        // padding: 0 2rem;
+      }
+    }
+
     &__header {
       padding: 3rem 1rem 1rem;
       @include tablet {
