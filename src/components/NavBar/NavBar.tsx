@@ -16,19 +16,56 @@ export default function NavBar() {
         data-bs-theme="light"
       >
         <Container>
-          <Navbar.Brand href="#home"><Link to="/" className="nav__link">FM</Link></Navbar.Brand>
+          <Navbar.Brand>
+            <Link to="/" className="nav__link">
+              FM
+            </Link>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link>
+                <Link to="/" className="nav__route">
+                  Home
+                </Link>
+              </Nav.Link>
               <Nav.Link href="#link">Contacto</Nav.Link>
               <NavDropdown title="Ministerios" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Varones</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Dorcas</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Parejas</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Jovenes</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Niños</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Alabanza</NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/varones" className="nav__route">
+                    Varones
+                  </Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/dorcas" className="nav__route">
+                    Dorcas
+                  </Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/parejas" className="nav__route">
+                    Parejas
+                  </Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/jovenes" className="nav__route">
+                    Jovenes
+                  </Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/juniors" className="nav__route">
+                    Juniors
+                  </Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/corderitos" className="nav__route">
+                    Corderitos
+                  </Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/alabanza" className="nav__route">
+                    Alabanza
+                  </Link>
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
                   Separated link
